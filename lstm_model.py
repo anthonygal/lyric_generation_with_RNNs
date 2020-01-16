@@ -3,7 +3,7 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 import os
-from utils import *
+from lstm_utils import *
 
 class CharRNN(nn.Module):
 

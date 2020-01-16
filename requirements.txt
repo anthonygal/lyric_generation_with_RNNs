@@ -1,0 +1,5 @@
+requests
+nltk
+BeautifulSoup
+torch
+numpy
