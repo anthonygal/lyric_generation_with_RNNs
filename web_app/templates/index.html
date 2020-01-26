@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
- <title>The next MC</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+  <title>The next MC</title>
 </head>
-<body>
- <h2>Drop a few bars </h2>
- <form method ='post' enctype=multipart/form-data>
-  <input type="text" name="first_bar">
-  <input type="submit" value="text">
+
+
+
+<body background="/static/images/clouds.jpg">
+
+<br>
+<br>
+<br>
+
+<form method ='post' enctype=multipart/form-data>
+  <center>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-3">
+              <label>
+                <input type="radio" class="form-control" value="kanye"  name = "artist" required="true">
+                <img src="/static/images/kanye.png" class="rounded" height="200" width="150">
+              </label>
+            </div>
+            <div class="col col-md-3">
+              <label>
+                <input type="radio" class="form-control" value="booba"  name = "artist" required="true">
+                <img src="/static/images/booba_mozart.jpg" class="rounded" height="200" width="150">
+              </label>
+            </div>
+            <div class="col col-md-3">
+              <label>
+                <input type="radio" class="form-control" value="badbunny"  name = "artist" required="true">
+                <img src="/static/images/badbunny.jpg" class="rounded" height="200" width="150">
+              </label>
+            </div>
+        </div>
+    </div>
+  </center>
+  <br>
+  <h2>Drop the first bars </h2>
+  <div class="input-group">
+    <textarea class="form-control" aria-label="With textarea" name = "first_bar" required="true"></textarea>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary btn-lg btn-block" > Get the lyrics </button>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
+<footer style="position:fixed;bottom:70px;right:0;height:30px;max-width: 25%;">
+
+  <a href="github.com/anthonygal/lyric_generation_with_RNNs" style="color:orange"> <strong> Github </strong> </a>
+  <p style="color:white">I was a little bored at work over Christmas so I trainded a neural network (a basic LSTM) to generate Kanye, Booba and Bad Bunny lyrics.</p>
+</footer>
+
+
 </html>
