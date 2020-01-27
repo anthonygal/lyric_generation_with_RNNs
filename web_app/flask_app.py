@@ -14,4 +14,4 @@ def hello_world():
     return render_template('results.html', next_bars = next_bars)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
