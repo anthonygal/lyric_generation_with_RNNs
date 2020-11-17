@@ -1,1 +1,1 @@
-# An attempt to automatically generate Kanye West lyrics with an LSTM
+# A quick attempt to automatically generate lyrics with an LSTM
