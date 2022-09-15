@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 requests = "*"
 beautifulsoup4 = "*"
-torch = "*"
+torch = 1.11.0+cpu
 numpy = "*"
 flask = "*"
 
