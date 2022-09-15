@@ -1,0 +1,32 @@
+/* HIDE RADIO */
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 5px solid #33cccc;
+}
+
+h1, h2, button {
+  margin-left: 15px;
+    color: #ffffff;
+    font-family: 'Lobster';
+}
+
+button {
+    color: #ffffff;
+    font-family: 'Lobster';
+}
+
+p {
+    color: #ffffff;
+}
