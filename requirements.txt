@@ -1,4 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
+gunicorn
 requests
 beautifulsoup4
 torch==1.8.1+cpu
