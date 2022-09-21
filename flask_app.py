@@ -16,7 +16,3 @@ def hello_world():
         first_bar = request.form['first_bar']
     next_bars = writeSomeBars(artist, first_bar)
     return render_template('results.html', next_bars = next_bars)
-
-
-if __name__ == '__main__':
-    app.run(debug=False)
